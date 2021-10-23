@@ -1,19 +1,16 @@
-package com.hackerearth.fullstack.backend.controller;
-import com.hackerearth.fullstack.backend.exception.CustomException;
+package com.authoritydmc.fullstack.backend.controller;
+import com.authoritydmc.fullstack.backend.exception.CustomException;
 
-import com.hackerearth.fullstack.backend.model.Student;
+import com.authoritydmc.fullstack.backend.model.Student;
 
-import com.hackerearth.fullstack.backend.payload.request.StudentRequest;
-import com.hackerearth.fullstack.backend.payload.response.MessageResponse;
+import com.authoritydmc.fullstack.backend.payload.request.StudentRequest;
 
-import com.hackerearth.fullstack.backend.repository.StudentRepository;
-import com.hackerearth.fullstack.backend.services.StudentService;
-import com.hackerearth.fullstack.backend.utils.Constants;
+import com.authoritydmc.fullstack.backend.repository.StudentRepository;
+import com.authoritydmc.fullstack.backend.services.StudentService;
+import com.authoritydmc.fullstack.backend.utils.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.text.SimpleDateFormat;
 import java.util.*;
 
 @CrossOrigin(origins = "http://localhost:5000")

@@ -1,4 +1,4 @@
-package com.hackerearth.fullstack.backend;
+package com.authoritydmc.fullstack.backend;
 
 import java.sql.Types;
 

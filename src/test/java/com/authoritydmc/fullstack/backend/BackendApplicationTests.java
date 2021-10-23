@@ -1,4 +1,4 @@
-package com.hackerearth.fullstack.backend;
+package com.authoritydmc.fullstack.backend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

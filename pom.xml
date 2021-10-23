@@ -8,11 +8,11 @@
 		<version>2.4.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.hackerearth.fullstack</groupId>
-	<artifactId>backend</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>backend</name>
-	<description>HackerEarth boilerplate code Spring Boot</description>
+	<groupId>com.authoritydmc.fullstack</groupId>
+	<artifactId>student-backend</artifactId>
+	<version>1.0</version>
+	<name>student-backend</name>
+	<description>Student backend api</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>

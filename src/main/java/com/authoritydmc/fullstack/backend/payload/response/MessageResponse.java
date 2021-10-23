@@ -1,4 +1,4 @@
-package com.hackerearth.fullstack.backend.payload.response;
+package com.authoritydmc.fullstack.backend.payload.response;
 
 public class MessageResponse {
 	private String message;

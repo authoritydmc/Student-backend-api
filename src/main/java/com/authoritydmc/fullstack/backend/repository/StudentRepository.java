@@ -1,7 +1,6 @@
-package com.hackerearth.fullstack.backend.repository;
+package com.authoritydmc.fullstack.backend.repository;
 
-import com.hackerearth.fullstack.backend.model.Student;
-import org.springframework.data.jpa.repository.JpaRepository;
+import com.authoritydmc.fullstack.backend.model.Student;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;

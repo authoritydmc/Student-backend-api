@@ -1,4 +1,4 @@
-package com.hackerearth.fullstack.backend.utils;
+package com.authoritydmc.fullstack.backend.utils;
 
 public class Constants {
 	public static final String STUDENT_ALREADY_PRESENT_MESSAGE="Student with the same roll is already present";

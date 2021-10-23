@@ -1,4 +1,4 @@
-package com.hackerearth.fullstack.backend.model;
+package com.authoritydmc.fullstack.backend.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 

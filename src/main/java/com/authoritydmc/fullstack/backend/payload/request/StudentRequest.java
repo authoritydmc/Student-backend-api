@@ -1,4 +1,4 @@
-package com.hackerearth.fullstack.backend.payload.request;
+package com.authoritydmc.fullstack.backend.payload.request;
 
 public class StudentRequest {
     String name;

@@ -1,9 +1,8 @@
-package com.hackerearth.fullstack.backend.services;
+package com.authoritydmc.fullstack.backend.services;
 
-import com.hackerearth.fullstack.backend.model.Student;
+import com.authoritydmc.fullstack.backend.model.Student;
+import com.authoritydmc.fullstack.backend.repository.StudentRepository;
 
-import com.hackerearth.fullstack.backend.payload.response.MessageResponse;
-import com.hackerearth.fullstack.backend.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +14,7 @@ import java.util.Optional;
 public class StudentService {
 
 @Autowired
-    StudentRepository studentRepository;
+StudentRepository studentRepository;
 
 
 public List<Student> getAllStudents()

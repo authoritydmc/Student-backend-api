@@ -1,4 +1,4 @@
-package com.hackerearth.fullstack.backend.exception;
+package com.authoritydmc.fullstack.backend.exception;
 
 public class ErrorDetails {
 	private String message;
