@@ -75,11 +75,22 @@ public class StudentController {
 
         List<Student> students=studentService.getAllStudents();
 
-
-
         return students;
 
     }
+    @GetMapping("/insrt")
+    public String  studentInsert(){
+
+        int rand = (int)(Math.random() * 1000) + 500;
+
+        Student rstu= studentService.addStudent(new Student("AuthorityDMC",String.valueOf(rand)));
+
+        return "<h1>Welcome to Student api </h1><hr><br>Sample data name='AuthorityDMC' roll="+rand+" inserted!!!<hr><br> A sample get api on <a href='../../api/v1/student'>/api/v1/student</a>" +
+                "<br><hr> Sample Insert a Record <a href='../../api/v1/insrt'>/api/v1/insrt</a>"+
+                "<br><hr>README @ <a href='https://github.com/authoritydmc/backend/tree/master#backend'>Github</a>";
+
+    }
+
     @GetMapping("/student/find")
     public Map<String,Object> findByMethod(@RequestParam String method,@RequestParam String param){
 
