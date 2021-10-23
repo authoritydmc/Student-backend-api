@@ -87,7 +87,7 @@ public class StudentController {
 
         return "<h1>Welcome to Student api </h1><hr><br>Sample data name='AuthorityDMC' roll="+rand+" inserted!!!<hr><br> A sample get api on <a href='../../api/v1/student'>/api/v1/student</a>" +
                 "<br><hr> Sample Insert a Record <a href='../../api/v1/insrt'>/api/v1/insrt</a>"+
-                "<br><hr>README @ <a href='https://authoritydmc.github.io/backend/'>Github</a>";
+                "<br><hr>README @ <a href='https://authoritydmc.github.io/Student-backend-api/'>Github</a>";
 
     }
 
