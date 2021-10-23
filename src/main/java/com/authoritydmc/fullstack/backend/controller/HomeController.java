@@ -16,7 +16,7 @@ public class HomeController {
 
 return "<h1>Welcome to Student api </h1><hr><br> A sample get api on <a href='api/v1/student'>/api/v1/student</a>" +
         "<br><hr> Sample Insert a Record <a href='/api/v1/insrt'>/api/v1/insrt</a>"+
-        "<br><hr>README @ <a href='https://github.com/authoritydmc/backend/tree/master#backend'>Github</a>";
+        "<br><hr>README @ <a href='https://authoritydmc.github.io/backend/'>Github</a>";
 
     }
 }
