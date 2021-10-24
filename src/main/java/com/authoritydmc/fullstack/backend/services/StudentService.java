@@ -56,4 +56,10 @@ public Student findById(String id)
         return null;
 }
 
+public Student updateStudent(Student student)
+{
+     studentRepository.save(student);
+     return student;
+}
+
 }

@@ -50,6 +50,34 @@ public class StudentController {
 
     }
 
+    @PutMapping("/student/{id}")
+    public Map<String,Object> UpdateStudent(@PathVariable long id,@RequestBody StudentRequest studentRequest) throws CustomException {
+
+        /*
+        Complete this function to get a post request as a student taking
+        the parameters as Student Name and Student Roll Number
+        */
+        if(studentRequest.getName()==null||studentRequest.getName().length()==0){
+            throw new CustomException(Constants.INVALID_NAME_MESSAGE,Constants.INVALID_NAME);
+        }
+        if(studentRequest.getRoll()==null||studentRequest.getRoll().length()==0){
+            throw new CustomException(Constants.INVALID_ROLL_MESSAGE,Constants.INVALID_ROLL);
+        }
+        Student student=studentRepository.getByRoll(studentRequest.getRoll());
+        if(student!=null && student.getId()!=id){
+            throw new CustomException(Constants.STUDENT_ALREADY_PRESENT_MESSAGE,Constants.STUDENT_ALREADY_PRESENT);
+        }
+        Student ts=new Student(studentRequest.getName(),studentRequest.getRoll());
+        ts.setId(id);
+        Student rstu= studentService.updateStudent(ts);
+        Map <String,Object> returnVal=new HashMap<>();
+        returnVal.put("success",true);
+        returnVal.put("student",rstu);
+        return  returnVal;
+
+
+    }
+
     @DeleteMapping("/student/{id}")
     public Map<String,Object> deleteStudent(@PathVariable long id) throws CustomException {
 
