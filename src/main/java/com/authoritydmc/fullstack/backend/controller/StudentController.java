@@ -63,6 +63,10 @@ public class StudentController {
         if(studentRequest.getRoll()==null||studentRequest.getRoll().length()==0){
             throw new CustomException(Constants.INVALID_ROLL_MESSAGE,Constants.INVALID_ROLL);
         }
+        Optional<Student> studentq=studentRepository.findById(id);
+        if(!studentq.isPresent()){
+            throw new CustomException(Constants.NO_SUCH_STUDENT_MESSAGE,Constants.NO_SUCH_STUDENT);
+        }
         Student student=studentRepository.getByRoll(studentRequest.getRoll());
         if(student!=null && student.getId()!=id){
             throw new CustomException(Constants.STUDENT_ALREADY_PRESENT_MESSAGE,Constants.STUDENT_ALREADY_PRESENT);
