@@ -11,3 +11,5 @@ sample get URL To fetch student list in json
 
 Sample Insert a Record 
 [https://api-student-backend.herokuapp.com/api/v1/insrt](https://api-student-backend.herokuapp.com/api/v1/insrt)
+
+##authoritydmc## Raj dubey
